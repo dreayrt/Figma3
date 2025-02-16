@@ -1,0 +1,13 @@
+/* dung base */
+* {
+  box-sizing: border-box;
+}
+html {
+  /* doi px sang rem */
+  font-size: 62.5%;
+}
+body {
+  /* 10px la 1rem */
+  font-size: 1.6rem;
+  font-family: "Sora", serif;
+}
