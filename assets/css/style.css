@@ -16,11 +16,10 @@ body {
 }
 /* =======================================common======================================= */
 .container {
-  width: 1440px;
-  height: 800px;
-  margin: 0 auto;
+  width: 1170px;
   /* khong bi co lai dan den mat chu (luon cach le moi ben 24px) */
   max-width: calc(100% - 48px);
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -92,4 +91,64 @@ a {
 }
 .header__action--login {
   margin-right: 7px;
+}
+/* =======================================hero======================================= */
+.hero {
+  padding-top: 76px;
+  display: flex;
+  align-items: center;
+}
+.hero__content {
+  width: 36%;
+}
+.hero__media {
+  /* chiem phan con lai cua container(100-36%) */
+  flex: 1;
+}
+.hero__heading {
+  width: 517px;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+.hero__images {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.hero__image {
+  object-fit: cover;
+  border-radius: 6px;
+}
+.hero__image--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -9px;
+  /* dung z-index de phan tu noi len */
+  z-index: 1;
+}
+.hero__image--small {
+  width: 210px;
+  height: 410px;
 }
