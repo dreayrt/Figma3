@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-bg: #10375c;
+}
 html {
   /* doi px sang rem */
   font-size: 62.5%;
@@ -10,4 +13,83 @@ body {
   /* 10px la 1rem */
   font-size: 1.6rem;
   font-family: "Sora", serif;
+}
+/* =======================================common======================================= */
+.container {
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  /* khong bi co lai dan den mat chu (luon cach le moi ben 24px) */
+  max-width: calc(100% - 48px);
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  /* the a nen dung line-height */
+  min-width: 205px;
+  line-height: 60px;
+  color: #fff;
+  background: #2e80ce;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-radius: 999px;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+/* =======================================header======================================= */
+.header {
+  padding-top: 30px;
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  gap: 42px;
+}
+.header__action--login,
+.navbar__link {
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  font-size: 1.6rem;
+  /* font-weight: 400; */
+  /* su dung font-weight thi cac chu xung quanh se bi day =>text-shadow */
+  text-shadow: 1px 0 0 currentColor;
+  line-height: 1.75;
+}
+.navbar__link--active::before {
+  content: "";
+  /* the a la inline nen khong nhan kich thuoc */
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: 8px;
+  top: -3px;
+}
+.header__action--signup {
+  display: inline-block;
+  min-width: 104px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.header__action--login {
+  margin-right: 7px;
 }
