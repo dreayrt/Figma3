@@ -23,6 +23,12 @@ body {
 }
 a {
   text-decoration: none;
+  color: #575f66;
+  cursor: pointer;
+  /*cursor:wait;
+    cursor:default;
+    cursor:text;
+  */
 }
 .btn {
   display: inline-block;
@@ -38,6 +44,20 @@ a {
 }
 .btn:hover {
   opacity: 0.7;
+}
+.section-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.section-desc {
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
 }
 /* =======================================header======================================= */
 .header {
@@ -151,4 +171,78 @@ a {
 .hero__image--small {
   width: 210px;
   height: 410px;
+}
+/* =======================================service======================================= */
+.service {
+  padding: 170px 0px;
+}
+.service__heading,
+.service__desc {
+  text-align: center;
+}
+.service__desc {
+  /* vi the p chiem chon do rong phan tu cha no nen text align:center can giua khong bi */
+  /* truong hop nay ta da dat do rong nen text align:center can giua phan tu co do rong do nhung khong vi tri center cua the cha no nua */
+  /* vi the dung margin */
+  width: 468px;
+  margin: 0 auto;
+}
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+}
+.service-item {
+  padding: 21px;
+  display: flex;
+  width: 470px;
+  /* khong gion han do cao vi noi dung co the phinh ra */
+  /* height: 128px; */
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.25s;
+}
+.service-item:hover {
+  /* khi su dung position no se loi item do ra khoi mat phang khac(loi ra khoi luong thong thuong) va nam o tren mat phang cao hon  */
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 19px;
+  transition: 0.25s;
+}
+.service-item:hover .service-item__icon {
+  /* cai rang */
+  color: #fff;
+  /* mau nen */
+  background-color: #2e80ce;
+}
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.service-item__desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.service__btn {
+  margin-top: 75px;
 }
