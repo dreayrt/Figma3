@@ -185,7 +185,7 @@ a {
   /* truong hop nay ta da dat do rong nen text align:center can giua phan tu co do rong do nhung khong vi tri center cua the cha no nua */
   /* vi the dung margin */
   width: 468px;
-  margin: 0 auto;
+  margin: 18px auto 0px;
 }
 .service__row {
   margin-top: 70px;
@@ -245,4 +245,54 @@ a {
 }
 .service__btn {
   margin-top: 75px;
+}
+/* =======================================work======================================= */
+.work {
+  padding: 100px 0px;
+  background: #f6fbff;
+}
+.work__desc {
+  width: 468px;
+}
+.work__list {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.work-item {
+  padding: 43px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 16px solid #eaf6ff;
+  /* de no tu nhien khong bi doi dot ngot */
+  transition: 0.25s;
+}
+.work-item:hover {
+  border: 16px solid #2e80ce;
+  /* dich theo truc y */
+  transform: translateY(-16px);
+}
+.work-item__heading {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+.work-item__desc {
+  width: 254px;
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.work-item__more {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2e80ce;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
 }
