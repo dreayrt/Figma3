@@ -296,3 +296,54 @@ a {
   font-weight: 400;
   line-height: 1.75;
 }
+/* =======================================about======================================= */
+.about {
+  padding: 170px 0px;
+  /* background-color: red; */
+}
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about__media {
+  width: 49%;
+}
+.about-content {
+  width: 40%;
+}
+.about__img--big,
+.about__img--small {
+  object-fit: cover;
+}
+.about__img--big {
+  /* the img cung la 1 the inline */
+
+  /* Khi sử dụng thẻ HTML có display: inline hoặc chứa các phần tử inline, có thể xuất hiện khoảng trắng không mong muốn giữa các phần tử do cách trình duyệt xử lý dấu cách, xuống dòng trong HTML.
+     Để loại bỏ khoảng hở này, ta có thể sử dụng display: flex;.
+  🔹 Nguyên nhân của khoảng hở trong thẻ inline
+      Các phần tử inline hoặc inline-block (như <span>, <a>, <img>) được trình duyệt xử lý giống như văn bản, vì vậy:
+      Dấu cách, xuống dòng giữa các phần tử inline được tính như khoảng trắng.
+      Khoảng cách này tương đương với khoảng cách giữa các chữ cái trong một dòng văn bản. */
+
+  /* Khi sử dụng display: flex;, các phần tử con (flex items) không còn được xử lý như văn bản mà được sắp xếp dựa trên mô hình flexbox. 
+  Điều này giúp loại bỏ khoảng trắng thừa. */
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+.about__img--small {
+  position: absolute;
+  top: 122px;
+  left: 238px;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+}
+.about__img {
+  position: relative;
+}
+.about-content__btn {
+  margin-top: 38px;
+}
