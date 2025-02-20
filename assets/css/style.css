@@ -430,3 +430,43 @@ a {
   justify-content: center;
   margin-top: 38px;
 }
+/* =======================================cta mobile======================================= */
+.install__inner {
+  margin: 115px 0px 170px;
+  background-color: #2e80ce;
+  border-radius: 4px;
+  height: 427px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.install__img {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install__content {
+  width: 586px;
+}
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+.install__desc {
+  margin-top: 18px;
+  max-width: 506px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+}
