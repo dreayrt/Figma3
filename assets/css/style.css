@@ -15,6 +15,12 @@ body {
   font-family: "Sora", serif;
 }
 /* =======================================common======================================= */
+input,
+textarea,
+button.select {
+  font-family: inherit;
+  font-size: inherit;
+}
 .container {
   width: 1170px;
   /* khong bi co lai dan den mat chu (luon cach le moi ben 24px) */
@@ -567,7 +573,7 @@ a {
 }
 /* =======================================Appointment====================================== */
 .appointment {
-  margin: 85px 0px;
+  margin-top: 85px;
 }
 .appointment__inner {
   background: #f6fbff;
@@ -590,4 +596,112 @@ a {
 }
 .appointment__btn {
   margin-top: 18px;
+}
+/* =======================================footer====================================== */
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: #10375c;
+  font-family: "Open Sans", serif;
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.footer__heading {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer__list {
+  margin: 20px 0px 28px;
+}
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  white-space: nowrap;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__item {
+  margin-bottom: 10px;
+}
+.footer__social {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px 28px;
+}
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+.footer__social-btn:hover {
+  background-color: #2e80ce;
+  color: white;
+}
+.footer-form {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  border: none;
+}
+.footer-form__submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.footer__copyright {
+  border-top: 1px solid #406181;
+}
+.footer__copyright-text {
+  padding: 28px 0px 42px;
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
 }
