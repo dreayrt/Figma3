@@ -1,0 +1,58 @@
+/*PC*/
+@media (min-width: 992px) {
+}
+/* table & moblie */
+@media (max-width: 991.98px) {
+  /* an navbar */
+  .navbar {
+    display: none;
+  }
+  /* chuyen logo vao giua */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* can lai vi tri menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 44px;
+    left: 25px;
+    color: #fff;
+    width: 24px;
+  }
+  /* overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* binh thuong an lop phu di(overlay) di */
+    opacity: 0;
+    /* an khoi giao dien nhung van click vao cac btn binh thuong */
+    visibility: hidden;
+  }
+  /* kiem tra neu checkbox duoc check thi hien ngay overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    /* phan tu hien thi binh thuong dung de hien thi lai phan tu da bi tac dong bang visibility:hidden */
+    /* hien lai lop phu */
+    visibility: visible;
+  }
+}
+
+/* table */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width>=767.98px) {
+}
+/* tam an phan khong lien quan */
+.hero,
+footer,
+main {
+  display: none;
+}
