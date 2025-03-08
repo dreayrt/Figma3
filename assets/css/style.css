@@ -543,7 +543,7 @@ a {
 .blog-item__body {
   padding: 18px 22px;
   width: 270px;
-  height: 375px;
+  height: 222px;
   flex-shrink: 0;
 }
 .blog-item__heading {
