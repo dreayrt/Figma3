@@ -127,6 +127,23 @@
     width: 90%;
     text-align: center;
   }
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item__thumbnail {
+    margin: 0 auto;
+  }
+  .team-item__img-bg {
+    margin: 0 auto;
+  }
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /* table */
