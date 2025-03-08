@@ -1,5 +1,8 @@
 /*PC*/
 @media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
 }
 /* table & moblie */
 @media (max-width: 991.98px) {
@@ -41,6 +44,38 @@
     /* phan tu hien thi binh thuong dung de hien thi lai phan tu da bi tac dong bang visibility:hidden */
     /* hien lai lop phu */
     visibility: visible;
+  }
+  .menu-drawer {
+    position: fixed;
+    background-color: rgb(109, 83, 83);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 40px;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close__menu {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+  }
+  #navbar__list--mobile {
+    margin-top: 30px;
+  }
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar__link:hover {
+    background-color: #00ffff37;
   }
 }
 
