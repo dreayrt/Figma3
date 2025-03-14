@@ -275,4 +275,8 @@
   .footer__copyright {
     margin-top: 20px;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
